@@ -5,7 +5,7 @@ FROM jboss/wildfly:latest
 WORKDIR /opt/jboss/wildfly
 
 # Copie o arquivo WAR para o diretório de deploy do WildFly
-COPY helloworld.war /opt/jboss/wildfly/standalone/deployments/
+COPY SampleWebApp.war /opt/jboss/wildfly/standalone/deployments/
 
 # Exponha a porta padrão do WildFly
 EXPOSE 8080
